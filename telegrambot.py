@@ -141,7 +141,7 @@ def echo_all(message):
   prompt = prompts.replace("/chat","")
   headers={'Content-Type': 'application/json'}
   body = {
-    "user_id":str(user+"-telegram"),
+    "user_id":str(user)+"-telegram",
     "prompt":prompt
 
   }
