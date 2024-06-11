@@ -1,0 +1,10 @@
+flask
+pyTelegramBotAPI
+discord
+numpy
+pandas
+opencv-python
+jsonpickle
+bittensor
+transformers
+torch
