@@ -145,7 +145,7 @@ def echo_all(message):
     "prompt":prompt
 
   }
-  r = requests.post('http://127.0.0.1:5002/api',headers=headers,json=body)
+  r = requests.post('http://65.109.75.38:5005/api',headers=headers,json=body)
   ans = r.json()
   print(ans)
   anss = ans['message']
