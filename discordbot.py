@@ -132,7 +132,7 @@ def tts(text,filename='audio.wav'):
 
 
 
-@bot.slash_command(name="clear_replytensor",description="Clear chat context!")
+@bot.hybrid_command(name="clear_replytensor",description="Clear chat context!")
 async def clear_replytensor(ctx):
     users = ctx.author.name
     await ctx.response.defer()
@@ -145,7 +145,7 @@ async def clear_replytensor(ctx):
 
 
 
-@bot.slash_command(name="regenerate",description="Regenerate Last prompt")
+@bot.hybrid_command(name="regenerate",description="Regenerate Last prompt")
 async def regenerate(ctx):
     if ctx.author == bot.user:
         return
@@ -261,7 +261,7 @@ def generate(message):
 badwords = ['pussy','blow job','boobs','boobies','tits','sex','fucking','fucks','naked','nsfw','dildow']
 
 ###############################send image to discord
-@bot.slash_command(name="imagine",description="Generate Image with ReplyTensor")
+@bot.hybrid_command(name="imagine",description="Generate Image with ReplyTensor")
 async def imagine(ctx,message: str):
     print(ctx)
     users = ctx.author.name
@@ -289,7 +289,7 @@ async def imagine(ctx,message: str):
 ########### Regenerate image
 
 
-@bot.slash_command(name="reimagine",description="Regenerate Image with ReplyTensor")
+@bot.hybrid_command(name="reimagine",description="Regenerate Image with ReplyTensor")
 async def reimagine(ctx):
     users = ctx.author.name
     msg = fetch_last_message_by_user(users)
