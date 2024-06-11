@@ -29,9 +29,9 @@ from PIL import Image
 
 
 intents = discord.Intents.default()
-intents.members = True
+# intents.members = True
 intents.message_content = True
-intents.voice_states = True
+# intents.voice_states = True
 
 bot = commands.Bot(command_prefix="!",intents=intents)
 #tts_model = VitsModel.from_pretrained("facebook/mms-tts-urd-script_arabic")
