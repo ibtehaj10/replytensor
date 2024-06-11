@@ -33,7 +33,7 @@ intents.members = True
 intents.message_content = True
 intents.voice_states = True
 
-bot = discord.Bot(intents=intents)
+bot = commands.Bot(intents=intents)
 #tts_model = VitsModel.from_pretrained("facebook/mms-tts-urd-script_arabic")
 #tts_tokenizer = AutoTokenizer.from_pretrained("facebook/mms-tts-urd-script_arabic")
 tts_model = VitsModel.from_pretrained("facebook/mms-tts-eng")
