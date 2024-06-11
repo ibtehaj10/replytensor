@@ -183,5 +183,5 @@ def regenerate():
     return {"message":reply,"status":"OK"}
 
 if __name__ == '__main__':
-    app.run(port=5005,)
+    app.run(port=5005,host='0.0.0.0',threaded=True)
 
