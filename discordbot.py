@@ -31,7 +31,7 @@ from PIL import Image
 intents = discord.Intents.default()
 
 intents.message_content = True
-bot = discord.Bot(command_prefix='!',intents=intents)
+bot = commands.Bot(command_prefix='!',intents=intents)
 #tts_model = VitsModel.from_pretrained("facebook/mms-tts-urd-script_arabic")
 #tts_tokenizer = AutoTokenizer.from_pretrained("facebook/mms-tts-urd-script_arabic")
 tts_model = VitsModel.from_pretrained("facebook/mms-tts-eng")
