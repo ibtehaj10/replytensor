@@ -10,3 +10,6 @@ transformers
 torch
 pydub
 pillow
+soundfile
+scipy
+SpeechRecognition
