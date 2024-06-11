@@ -141,7 +141,7 @@ def echo_all(message):
   prompt = prompts.replace("/chat","")
   headers={'Content-Type': 'application/json'}
   body = {
-    "user_id":str(user),
+    "user_id":str(user+"-telegram"),
     "prompt":prompt
 
   }
@@ -270,7 +270,7 @@ def imagine_image(message, username):
         image_data = base64.b64decode(image_b64)
         image_stream = BytesIO(image_data)
         image = Image.open(image_stream)
-        filenames = 'images/'+username+'.jpg'
+        filenames = 'images/'+username+'_telegram.jpg'
         image.save(filenames, format="JPEG")
         print(filenames)
         return filenames
