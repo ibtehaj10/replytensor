@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 
 
-miner_api_key =  "LoTuFvRqEHhJuTdl6V7yh-adBsVSegPRNGD9WMOsplI1xpVTIg8ON1OydyCecs9v"
+miner_api_key =  "9eKEnV1qyVuNyGC6FvL_RIJR48vUKCbkhCWiVUok0Ij9khzrjGJToNhpq7z3iwVX"
 
 
 ########################################################### GET best UIDS ##########################################################
