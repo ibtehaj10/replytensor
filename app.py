@@ -50,7 +50,7 @@ def bittensor(inp,ind):
     new_inp = inp
     new_inp.insert(0,systems)
 #    uid = uids()[ind]
-    url = "https://sn18.neuralinternet.ai/textgen"
+    url = " http://0.0.0.0:8002/textgen"
     #uid = uids()
     print('################### new input chat : ',new_inp)
     payload = json.dumps({
